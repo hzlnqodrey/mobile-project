@@ -16,27 +16,39 @@ class MainScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.search))
         ],
       ),
-      body: Container(
-          color: Colors.cyan[100],
-          child: Column(
-            children: [
-              Container(
-                color: Colors.greenAccent,
-                height: 100,
-                width: 100,
-              ),
-              Container(
-                color: Colors.deepPurple,
-                height: 100,
-                width: 100,
-              ),
-              Container(
-                color: Colors.deepOrange,
-                height: 100,
-                width: 100,
-              ),
-            ],
-          )),
+      body: SingleChildScrollView(
+          child: Container(
+              color: Colors.cyan[100],
+              //height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Column(children: [
+                Container(
+                  color: Colors.greenAccent,
+                  height: 100,
+                  width: MediaQuery.of(context).size.width,
+                  child: Text('Ini Teks 1'),
+                ),
+                Container(
+                  color: Colors.deepPurple,
+                  height: 400,
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    children: [
+                      TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Text Button",
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ))
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.deepOrange,
+                  height: 1000,
+                  width: MediaQuery.of(context).size.width,
+                ),
+              ]))),
     ); // Scaffold
   }
 }
