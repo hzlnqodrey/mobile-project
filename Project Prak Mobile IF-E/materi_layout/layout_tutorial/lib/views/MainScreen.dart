@@ -39,7 +39,17 @@ class MainScreen extends StatelessWidget {
                           child: Text(
                             "Text Button",
                             style: TextStyle(fontSize: 20, color: Colors.white),
-                          ))
+                          )),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Text("Elevated Button"),
+                      ),
+                      OutlinedButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Outlined Button",
+                            style: TextStyle(color: Colors.white),
+                          )),
                     ],
                   ),
                 ),
