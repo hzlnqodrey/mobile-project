@@ -16,6 +16,27 @@ class MainScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.search))
         ],
       ),
+      body: Container(
+          color: Colors.cyan[100],
+          child: Column(
+            children: [
+              Container(
+                color: Colors.greenAccent,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.deepPurple,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.deepOrange,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          )),
     ); // Scaffold
   }
 }
